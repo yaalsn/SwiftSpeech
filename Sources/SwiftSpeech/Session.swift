@@ -119,7 +119,7 @@ public extension SwiftSpeech.Session {
          
          See `SwiftSpeech.Session.AudioSessionConfiguration` for more options.
          */
-        public var audioSessionConfiguration: AudioSessionConfiguration = .recordOnly
+        public var audioSessionConfiguration: AudioSessionConfiguration = .playAndRecord
         
         public init(
             locale: Locale = .current,
@@ -128,7 +128,7 @@ public extension SwiftSpeech.Session {
             requiresOnDeviceRecognition: Bool = false,
             contextualStrings: [String] = [],
             interactionIdentifier: String? = nil,
-            audioSessionConfiguration: AudioSessionConfiguration = .recordOnly
+            audioSessionConfiguration: AudioSessionConfiguration = .playAndRecord
         ) {
             self.locale = locale
             self.taskHint = taskHint
